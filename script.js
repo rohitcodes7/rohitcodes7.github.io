@@ -58,7 +58,7 @@ window.addEventListener("scroll", scrollAnimation);
 window.addEventListener("load", scrollAnimation);
 
 
-// Copy Email
+// Copy Email Function
 function copyEmail() {
   const email = "rohitdas3933@gmail.com";
   navigator.clipboard.writeText(email);
