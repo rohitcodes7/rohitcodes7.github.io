@@ -39,21 +39,26 @@ function typeEffect() {
 
 typeEffect();
 
-// Scroll Animation
-const slideElements = document.querySelectorAll(".slide-up");
 
-window.addEventListener("scroll", () => {
-  slideElements.forEach((el) => {
-    const position = el.getBoundingClientRect().top;
+// Smooth Scroll Animation
+const animatedElements = document.querySelectorAll(".fade-in, .slide-up");
+
+function scrollAnimation() {
+  animatedElements.forEach((el) => {
+    const elementTop = el.getBoundingClientRect().top;
     const screenHeight = window.innerHeight;
 
-    if (position < screenHeight - 80) {
+    if (elementTop < screenHeight - 80) {
       el.classList.add("show");
     }
   });
-});
+}
 
-// Copy Email
+window.addEventListener("scroll", scrollAnimation);
+window.addEventListener("load", scrollAnimation);
+
+
+// Copy Email Function
 function copyEmail() {
   const email = "rohitdas3933@gmail.com";
   navigator.clipboard.writeText(email);
