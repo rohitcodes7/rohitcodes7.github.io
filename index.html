@@ -1,269 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rohit Kumar Das | Portfolio</title>
-
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-body {
-  background: linear-gradient(135deg, #020617, #0f172a, #1e293b);
-  color: white;
-  scroll-behavior: smooth;
-}
-
-/* NAVBAR */
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 50px;
-}
-
-nav h1 {
-  color: #00ff88;
-}
-
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: white;
-  transition: 0.3s;
-}
-
-nav a:hover {
-  color: #00ff88;
-}
-
-/* HERO */
-.hero {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 3rem;
-}
-
-.hero span {
-  color: #00ff88;
-}
-
-.typing {
-  color: #00ff88;
-  margin-top: 10px;
-  font-size: 1.3rem;
-}
-
-.hero p {
-  margin-top: 15px;
-  color: #cbd5f5;
-}
-
-/* BUTTONS */
-.buttons {
-  margin-top: 25px;
-}
-
-.buttons a {
-  padding: 12px 25px;
-  margin: 10px;
-  border-radius: 10px;
-  border: 2px solid #00ff88;
-  text-decoration: none;
-  color: white;
-  transition: 0.3s;
-}
-
-.buttons a:hover {
-  background: #00ff88;
-  color: black;
-  box-shadow: 0 0 15px #00ff88;
-}
-
-/* PROJECTS */
-.projects {
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.project-card {
-  margin: 20px auto;
-  padding: 20px;
-  width: 300px;
-  border-radius: 15px;
-  border: 2px solid #00ff88;
-  transition: 0.3s;
-}
-
-.project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 20px #00ff88;
-}
-
-/* CONTACT */
-.contact {
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.contact-box {
-  margin: 30px auto;
-  padding: 30px;
-  max-width: 500px;
-  border: 2px solid #00ff88;
-  border-radius: 15px;
-  backdrop-filter: blur(10px);
-  transition: 0.3s;
-}
-
-.contact-box:hover {
-  box-shadow: 0 0 20px #00ff88;
-}
-
-.contact-buttons {
-  margin-top: 20px;
-}
-
-.contact-buttons button,
-.contact-buttons a {
-  padding: 10px 20px;
-  margin: 10px;
-  border-radius: 8px;
-  border: 2px solid #00ff88;
-  background: transparent;
-  color: white;
-  cursor: pointer;
-  transition: 0.3s;
-  text-decoration: none;
-}
-
-.contact-buttons button:hover,
-.contact-buttons a:hover {
-  background: #00ff88;
-  color: black;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  color: #aaa;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohit | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- NAV -->
 <nav>
-  <h1>Rohit.</h1>
-  <div>
-    <a href="#">Home</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </div>
+  <h2>Rohit<span>.</span></h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 </nav>
 
-<!-- HERO -->
-<section class="hero">
-  <div>
-    <h1>Hello, I'm <span>Rohit Kumar Das</span></h1>
-    <div class="typing" id="typing"></div>
-
-    <p>
-      I build modern websites and love solving real-world problems with code.
-    </p>
-
-    <div class="buttons">
-      <a href="#projects">View Projects</a>
-      <a href="https://github.com/rohitcode7" target="_blank">GitHub</a>
-    </div>
-  </div>
+<section id="home" class="home">
+  <h1>Hello, I'm <span>Rohit</span></h1>
+  <p>Aspiring Developer | Building real-world projects</p>
+  <a href="#projects" class="btn">View Projects</a>
 </section>
 
-<!-- PROJECTS -->
-<section class="projects" id="projects">
+<section id="projects" class="projects">
   <h2>Projects</h2>
 
-  <div class="project-card">
+  <div class="card">
+    <h3>Calculator</h3>
+    <p>Basic calculator using JavaScript</p>
+  </div>
+
+  <div class="card">
+    <h3>Weather App</h3>
+    <p>Weather app using API</p>
+  </div>
+
+  <div class="card">
     <h3>Portfolio Website</h3>
-    <p>Modern personal portfolio using HTML & CSS.</p>
+    <p>This personal portfolio</p>
   </div>
 
-  <div class="project-card">
-    <h3>Coming Soon</h3>
-    <p>Add your real projects here.</p>
-  </div>
 </section>
 
-<!-- CONTACT -->
-<section class="contact" id="contact">
-  <h2>Contact Me</h2>
-  <p>Let's connect and work together.</p>
-
-  <div class="contact-box">
-    <p>Email: rohitdas3933@gmail.com</p>
-    <p>GitHub: github.com/rohitcode7</p>
-
-    <div class="contact-buttons">
-      <button onclick="copyEmail()">Copy Email</button>
-      <a href="mailto:rohitdas3933@gmail.com">Send Mail</a>
-    </div>
-  </div>
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>Email: yourmail@gmail.com</p>
 </section>
-
-<!-- FOOTER -->
-<footer>
-  ©️ 2026 Rohit Kumar Das | Portfolio Website
-</footer>
-
-<script>
-// COPY EMAIL
-function copyEmail() {
-  navigator.clipboard.writeText("rohitdas3933@gmail.com");
-  alert("Email copied!");
-}
-
-// TYPING EFFECT
-const text = ["Web Developer", "Frontend Developer", "Problem Solver"];
-let i = 0;
-let j = 0;
-let currentText = "";
-let isDeleting = false;
-
-function type() {
-  if (i < text.length) {
-    if (!isDeleting && j <= text[i].length) {
-      currentText = text[i].substring(0, j++);
-    } else if (isDeleting && j >= 0) {
-      currentText = text[i].substring(0, j--);
-    }
-
-    document.getElementById("typing").innerHTML = currentText;
-
-    if (j == text[i].length) isDeleting = true;
-    if (j == 0 && isDeleting) {
-      isDeleting = false;
-      i++;
-      if (i == text.length) i = 0;
-    }
-  }
-
-  setTimeout(type, isDeleting ? 50 : 100);
-}
-
-type();
-</script>
 
 </body>
 </html>
+
+
