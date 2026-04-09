@@ -1,144 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Rohit Kumar Das | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e293b, #020617);
+      color: white;
+    }
+
+    /* NAVBAR */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 50px;
+    }
+
+    nav h1 {
+      color: #00ff88;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: white;
+    }
+
+    /* HERO */
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+    }
+
+    .hero span {
+      color: #00ff88;
+    }
+
+    .hero h2 {
+      margin-top: 10px;
+      color: #00ff88;
+    }
+
+    .hero p {
+      margin-top: 15px;
+      line-height: 1.6;
+      color: #cbd5f5;
+    }
+
+    .buttons {
+      margin-top: 25px;
+    }
+
+    .buttons a {
+      padding: 10px 20px;
+      margin: 10px;
+      border: 2px solid #00ff88;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .buttons a:hover {
+      background: #00ff88;
+      color: black;
+    }
+
+    /* PROJECTS */
+    .projects {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .projects h2 {
+      font-size: 2rem;
+    }
+
+    /* CONTACT */
+    .contact {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .contact h2 {
+      font-size: 2rem;
+    }
+
+    .contact-box {
+      margin: 30px auto;
+      padding: 30px;
+      max-width: 500px;
+      border: 2px solid #00ff88;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .contact-content {
+      width: 100%;
+    }
+
+    .contact-content p {
+      margin: 10px 0;
+      font-size: 1rem;
+    }
+
+    .contact-buttons {
+      margin-top: 20px;
+    }
+
+    .contact-buttons button,
+    .contact-buttons a {
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 8px;
+      border: 2px solid #00ff88;
+      background: transparent;
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .contact-buttons button:hover,
+    .contact-buttons a:hover {
+      background: #00ff88;
+      color: black;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+  </style>
+</head>
 <body>
 
-  <!-- Animated Background -->
-  <div class="background">
-    <div class="circle one"></div>
-    <div class="circle two"></div>
-    <div class="circle three"></div>
-  </div>
-
-  <!-- Navbar -->
-  <nav class="navbar">
-    <h2 class="logo">Rohit<span>.</span></h2>
-
-    <ul class="nav-links">
-      <li><a href="#home" class="active">Home</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <!-- NAV -->
+  <nav>
+    <h1>Rohit.</h1>
+    <div>
+      <a href="#">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
 
-  <!-- Hero -->
-  <section id="home" class="hero fade-in">
+  <!-- HERO -->
+  <section class="hero">
     <div class="hero-content">
       <h1>Hello, I'm <span>Rohit Kumar Das</span></h1>
-      <h3><span id="typing"></span></h3>
-
+      <h2>Web Developer</h2>
       <p>
         I am a passionate developer building modern websites and real-world coding projects.
-        I love problem solving and learning new technologies.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="#projects" class="btn">View Projects</a>
-        <a href="https://github.com/rohitcodes7" target="_blank" class="btn outline">GitHub</a>
-      </div>
-    </div>
-
-    <div class="hero-card slide-up">
-      <h2>Quick Info</h2>
-      <p><b>Name:</b> Rohit Kumar Das</p>
-      <p><b>Email:</b> rohitdas3933@gmail.com</p>
-      <p><b>GitHub:</b> rohitcodes7</p>
-      <p><b>Role:</b> Web Developer</p>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="projects">
-    <h2 class="section-title fade-in">Projects</h2>
-    <p class="section-subtitle fade-in">
-      Some of my best projects that show my skills.
-    </p>
-
-    <div class="project-grid">
-
-      <div class="project-card slide-up">
-        <h3>🔥 Gym Macro Calculator</h3>
-        <p>Calculate calories, protein, carbs & fats with a clean UI.</p>
-        <a href="https://github.com/rohitcodes7" target="_blank">View on GitHub →</a>
-      </div>
-
-      <div class="project-card slide-up">
-        <h3>🌦 Weather Forecast App</h3>
-        <p>Weather app using API with smooth UI and animations.</p>
-        <a href="https://github.com/rohitcodes7" target="_blank">View on GitHub →</a>
-      </div>
-
-      <div class="project-card slide-up">
-        <h3>💰 Expense Tracker</h3>
-        <p>Track expenses with monthly report and storage.</p>
-        <a href="https://github.com/rohitcodes7" target="_blank">View on GitHub →</a>
-      </div>
-
-      <div class="project-card slide-up">
-        <h3>📝 Smart To-Do List</h3>
-        <p>Advanced to-do list with categories and local storage.</p>
-        <a href="https://github.com/rohitcodes7" target="_blank">View on GitHub →</a>
-      </div>
-
-      <div class="project-card slide-up">
-        <h3>🎓 Student Management System</h3>
-        <p>Python-based system for storing and updating student data.</p>
-        <a href="https://github.com/rohitcodes7" target="_blank">View on GitHub →</a>
-      </div>
-
-      <div class="project-card slide-up">
-        <h3>🤖 AI Resume Analyzer</h3>
-        <p>Analyze resume and show missing skills + improvement suggestions.</p>
-        <a href="https://github.com/rohitcodes7" target="_blank">View on GitHub →</a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="skills">
-    <h2 class="section-title fade-in">Skills</h2>
-    <p class="section-subtitle fade-in">Technologies I work with.</p>
-
-    <div class="skills-grid fade-in">
-      <div class="skill">HTML</div>
-      <div class="skill">CSS</div>
-      <div class="skill">JavaScript</div>
-      <div class="skill">Python</div>
-      <div class="skill">C (Basics)</div>
-      <div class="skill">Problem Solving</div>
-      <div class="skill">Communication</div>
-      <div class="skill">Teamwork</div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="contact">
-    <h2 class="section-title fade-in">Contact Me</h2>
-    <p class="section-subtitle fade-in">Let's connect and work together.</p>
-
-    <div class="contact-box slide-up">
-      <p><b>Email:</b> <span id="emailText">rohitdas3933@gmail.com</span></p>
-      <p><b>GitHub:</b> <a href="https://github.com/rohitcodes7" target="_blank">github.com/rohitcodes7</a></p>
-
-      <div class="hero-buttons">
-        <button class="btn" onclick="copyEmail()">Copy Email</button>
-        <a class="btn outline" href="mailto:rohitdas3933@gmail.com">Send Mail</a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <p>©️ 2026 Rohit Kumar Das | Portfolio Website</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+        I love
