@@ -3,21 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rohit Das | Portfolio</title>
+  <title>Rohit Kumar Das | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <!-- Background Animation -->
-  <div class="bg-blur"></div>
-  <div class="bg-blur blur2"></div>
+  <!-- Animated Background -->
+  <div class="background">
+    <div class="circle one"></div>
+    <div class="circle two"></div>
+    <div class="circle three"></div>
+  </div>
 
   <!-- Navbar -->
-  <nav>
+  <nav class="navbar">
     <h2 class="logo">Rohit<span>.</span></h2>
 
-    <ul>
+    <ul class="nav-links">
       <li><a href="#home" class="active">Home</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -25,64 +28,75 @@
     </ul>
   </nav>
 
-  <!-- Home -->
-  <section id="home" class="home">
-    <div class="home-content fade-in">
-      <h1>Hello, I'm <span>Rohit Das</span></h1>
+  <!-- Hero -->
+  <section id="home" class="hero fade-in">
+    <div class="hero-content">
+      <h1>Hello, I'm <span>Rohit Kumar Das</span></h1>
       <h3><span id="typing"></span></h3>
 
       <p>
-        I build modern websites and real-world projects using HTML, CSS, JavaScript & Python.
-        I love problem solving and creating useful apps.
+        I am a passionate developer building modern websites and real-world coding projects.
+        I love problem solving and learning new technologies.
       </p>
 
-      <div class="buttons">
+      <div class="hero-buttons">
         <a href="#projects" class="btn">View Projects</a>
         <a href="https://github.com/rohitcodes7" target="_blank" class="btn outline">GitHub</a>
       </div>
+    </div>
+
+    <div class="hero-card slide-up">
+      <h2>Quick Info</h2>
+      <p><b>Name:</b> Rohit Kumar Das</p>
+      <p><b>Email:</b> rohitdas3933@gmail.com</p>
+      <p><b>GitHub:</b> rohitcodes7</p>
+      <p><b>Role:</b> Web Developer</p>
     </div>
   </section>
 
   <!-- Projects -->
   <section id="projects" class="projects">
-    <h2 class="section-title">Projects</h2>
+    <h2 class="section-title fade-in">Projects</h2>
+    <p class="section-subtitle fade-in">
+      Some of my best projects that show my skills.
+    </p>
 
-    <div class="project-box">
+    <div class="project-grid">
 
-      <div class="card slide-up">
-        <h3>AI Resume Analyzer</h3>
-        <p>Upload resume and get skill score, missing skills, and improvement tips.</p>
+      <div class="project-card slide-up">
+        <h3>🔥 Gym Macro Calculator</h3>
+        <p>Calculate calories, protein, carbs & fats with a clean UI.</p>
         <a href="https://github.com/rohitcodes7" target="_blank">View on GitHub →</a>
       </div>
 
-      <div class="card slide-up">
-        <h3>Gym Diet & Macro Calculator</h3>
-        <p>Calculate calories, protein, carbs and fat with clean UI.</p>
+      <div class="project-card slide-up">
+        <h3>🌦 Weather Forecast App</h3>
+        <p>Weather app using API with smooth UI and animations.</p>
         <a href="https://github.com/rohitcodes7" target="_blank">View on GitHub →</a>
       </div>
 
-      <div class="card slide-up">
-        <h3>Weather Forecast Web App</h3>
-        <p>Weather app using API with real-time search and animated background.</p>
+      <div class="project-card slide-up">
+        <h3>💰 Expense Tracker</h3>
+        <p>Track expenses with monthly report and storage.</p>
         <a href="https://github.com/rohitcodes7" target="_blank">View on GitHub →</a>
       </div>
 
-      <div class="card slide-up">
-        <h3>Expense Tracker Dashboard</h3>
-        <p>Track daily expenses, chart visualization, and monthly summary.</p>
+      <div class="project-card slide-up">
+        <h3>📝 Smart To-Do List</h3>
+        <p>Advanced to-do list with categories and local storage.</p>
         <a href="https://github.com/rohitcodes7" target="_blank">View on GitHub →</a>
       </div>
 
-      <div class="card slide-up">
-        <h3>Student Management System (Python)</h3>
-        <p>Add, delete, update student data with file storage.</p>
+      <div class="project-card slide-up">
+        <h3>🎓 Student Management System</h3>
+        <p>Python-based system for storing and updating student data.</p>
         <a href="https://github.com/rohitcodes7" target="_blank">View on GitHub →</a>
       </div>
 
-      <div class="card slide-up">
-        <h3>Portfolio Website</h3>
-        <p>My personal portfolio website hosted on GitHub Pages.</p>
-        <a href="https://rohitcodes7.github.io" target="_blank">Live Website →</a>
+      <div class="project-card slide-up">
+        <h3>🤖 AI Resume Analyzer</h3>
+        <p>Analyze resume and show missing skills + improvement suggestions.</p>
+        <a href="https://github.com/rohitcodes7" target="_blank">View on GitHub →</a>
       </div>
 
     </div>
@@ -90,35 +104,39 @@
 
   <!-- Skills -->
   <section id="skills" class="skills">
-    <h2 class="section-title">Skills</h2>
+    <h2 class="section-title fade-in">Skills</h2>
+    <p class="section-subtitle fade-in">Technologies I work with.</p>
 
     <div class="skills-grid fade-in">
       <div class="skill">HTML</div>
       <div class="skill">CSS</div>
       <div class="skill">JavaScript</div>
       <div class="skill">Python</div>
-      <div class="skill">GitHub</div>
+      <div class="skill">C (Basics)</div>
       <div class="skill">Problem Solving</div>
+      <div class="skill">Communication</div>
+      <div class="skill">Teamwork</div>
     </div>
   </section>
 
   <!-- Contact -->
   <section id="contact" class="contact">
-    <h2 class="section-title">Contact Me</h2>
+    <h2 class="section-title fade-in">Contact Me</h2>
+    <p class="section-subtitle fade-in">Let's connect and work together.</p>
 
     <div class="contact-box slide-up">
       <p><b>Email:</b> <span id="emailText">rohitdas3933@gmail.com</span></p>
-      <p><b>GitHub:</b> github.com/rohitcodes7</p>
+      <p><b>GitHub:</b> <a href="https://github.com/rohitcodes7" target="_blank">github.com/rohitcodes7</a></p>
 
-      <div class="buttons">
+      <div class="hero-buttons">
         <button class="btn" onclick="copyEmail()">Copy Email</button>
         <a class="btn outline" href="mailto:rohitdas3933@gmail.com">Send Mail</a>
       </div>
     </div>
   </section>
 
-  <footer>
-    <p>©️ 2026 Rohit Das | Built with HTML, CSS & JS</p>
+  <footer class="footer">
+    <p>©️ 2026 Rohit Kumar Das | Portfolio Website</p>
   </footer>
 
   <script src="script.js"></script>
